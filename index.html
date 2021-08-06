@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inpainting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="">VARIABLE-LENGTH MUSIC SCORE INPAINTING</h1>
+    <h2 class="">Sub-Title</h2>
+    <a class="page-header__link" href="">View on Github</a>
+
+  </header>
+  <section id="section3">
+    <h2>Custom player and visualizer style</h2>
+    <midi-player src="twinkle_twinkle.mid">
+    </midi-player>
+    <!-- <midi-visualizer
+      src="./song02_prompt.midi">
+    </midi-visualizer> -->
+  </section>
+  <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>
+
+</body>
+
+</html>

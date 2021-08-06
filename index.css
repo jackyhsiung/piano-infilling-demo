@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  background: #e2e8f0;
+}
+
+.page-header {
+  padding: 3rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, #e96443, #904e95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.page-header__link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* Custom player style */
+#section3 midi-player {
+  display: block;
+  width: inherit;
+  margin: 4px;
+  margin-bottom: 0;
+}
+#section3 midi-player::part(control-panel) {
+  background: #ff5;
+  border: 2px solid #000;
+  border-radius: 10px 10px 0 0;
+}
+#section3 midi-player::part(play-button) {
+  color: #353;
+  border: 2px solid currentColor;
+  background-color: #4d4;
+  border-radius: 20px;
+  transition: all 0.2s;
+  content: 'hello';
+}
+#section3 midi-player::part(play-button):hover {
+  color: #0a0;
+  background-color: #5f5;
+  border-radius: 10px;
+}
+#section3 midi-player::part(time) {
+  font-family: monospace;
+}
+
+
+/* Custom visualizer style */
+#section3 midi-visualizer .piano-roll-visualizer {
+  background: #ffd;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  margin: 4px;
+  margin-top: 0;
+  overflow: auto;
+}
+#section3 midi-visualizer svg rect.note {
+  opacity: 0.6;
+  stroke-width: 2;
+}
+#section3 midi-visualizer svg rect.note[data-instrument="0"]{
+  fill: #e22;
+  stroke: #500;
+}
+#section3 midi-visualizer svg rect.note[data-instrument="2"]{
+  fill: #2ee;
+  stroke: #055;
+}
+#section3 midi-visualizer svg rect.note[data-is-drum="true"]{
+  fill: #888;
+  stroke: #888;
+}
+#section3 midi-visualizer svg rect.note.active {
+  opacity: 0.9;
+  stroke: #000;
+}
