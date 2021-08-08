@@ -1,7 +1,9 @@
 # inpainting-demo-page
 
-## Problems to solve
-1. identify context and inference
-2. midi-player stops during the space 
-3. switch between models
-4. layout
+## To-Do
+1. Responsive
+2. Fix the defects of going back to top after clicking the tab
+3. Change data
+4. Change repo name to infilling
+5. Change Sond font
+6. Add other songs
