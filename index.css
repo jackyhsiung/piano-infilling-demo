@@ -76,6 +76,7 @@ section {
   display: flex;
 }
 a {
+  color:#e96443;
   display: block;
   padding: 1rem 1.5rem;
   margin-bottom: -5px;
@@ -84,8 +85,13 @@ a {
   border-radius: 5px 5px 0 0;
   text-decoration: none;
 }
+
 a.selected {
-  color: #606c71;
+
   border-color: #e0e0e0;
   border-bottom-color: #fefefe;
+}
+a:hover, a.selected:hover  {
+  background: #e96443;
+  color: #ffffff;
 }
