@@ -20,18 +20,28 @@
     <a class="page-header__link" href="">View on Github</a>
 
   </header>
-  <section id="section3">
-    <h2>Custom player and visualizer style</h2>
-    <midi-visualizer src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/song02_prompt.midi">
+  <section id="inpainted-music">
+    <h2>Music inpainted by the different models</h2>
+    <div class='anchor-container'>
+      <a href="#" class='model selected'
+        midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi">FELIX</a>
+      <a href="#" class='model'
+        midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_ILM_2track.midi">ILM</a>
+      <a href="#" class='model'
+        midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_Ours_2track.midi">OURS</a>
+    </div>
+    <midi-visualizer id='inpainted-music-visualizer'
+      src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi">
     </midi-visualizer>
-    <midi-player src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/song02_prompt.midi"
-      visualizer="#section3 midi-visualizer">
+    <midi-player id='inpainted-music-player'
+      src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi"
+      visualizer="#inpainted-music midi-visualizer">
     </midi-player>
-    
   </section>
+
   <script
     src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>
-
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
