@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <!-- Web components polyfill, so this works on all browsers -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2.0.0/webcomponents-loader.js"></script>
+
+  <!-- Load magenta.js, which is needed by the element. -->
+  <script src="https://unpkg.com/@magenta/music@1.1.9/dist/magentamusic.js"></script>
+
+  <!-- Load the web component itself -->
+  <script src="midi-visualizer.js"></script>
+  </head>
+  <body>
+
+  <!-- Use the web component! -->
+  <midi-visualizer
+  id="visualizer"
+  url="https://cdn.glitch.com/3312a3b4-6418-4bed-a0bd-3a0ca4dfa2fb%2Fchopin.mid?1534369337985">
+  </midi-visualizer>
+  </body>
+</html>

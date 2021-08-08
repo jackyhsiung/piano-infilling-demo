@@ -22,13 +22,15 @@
   </header>
   <section id="section3">
     <h2>Custom player and visualizer style</h2>
-    <midi-player src="twinkle_twinkle.mid">
+    <midi-visualizer src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/song02_prompt.midi">
+    </midi-visualizer>
+    <midi-player src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/song02_prompt.midi"
+      visualizer="#section3 midi-visualizer">
     </midi-player>
-    <!-- <midi-visualizer
-      src="./song02_prompt.midi">
-    </midi-visualizer> -->
+    
   </section>
-  <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>
 
 </body>
 

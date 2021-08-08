@@ -37,12 +37,12 @@ section {
   display: block;
   width: inherit;
   margin: 4px;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 #section3 midi-player::part(control-panel) {
   background: #ff5;
   border: 2px solid #000;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0 0 10px 10px;
 }
 #section3 midi-player::part(play-button) {
   color: #353;
@@ -69,7 +69,7 @@ section {
   border-top: none;
   border-radius: 0 0 10px 10px;
   margin: 4px;
-  margin-top: 0;
+  margin-bottom: 0;
   overflow: auto;
 }
 #section3 midi-visualizer svg rect.note {
