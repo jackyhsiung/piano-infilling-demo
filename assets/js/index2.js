@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#inpainted-music a").click(function() {
+  $("a").click(function() {
     // switch to the selected model
     const songNumber = $(this).parent().parent().attr('id')
     const midiUrl = $(this).attr('midi-url')

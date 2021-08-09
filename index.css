@@ -36,7 +36,7 @@ html, body {
 midi-player {
   display: block;
   width: inherit;
-  margin: 4px;
+  margin: 0 4px 1.5rem 4px;
   margin-top: 0;
 }
 
@@ -52,7 +52,7 @@ midi-visualizer .piano-roll-visualizer {
   border: 1px solid #e9e9e9;
   border-bottom: none;
   /* border-radius: 10px 10px 0 0 ; */
-  margin: 4px;
+  margin: 0 4px;
   margin-bottom: 0;
   overflow: auto;
 }
@@ -72,6 +72,7 @@ midi-visualizer svg rect.note.active {
 }
 
 .anchor-container {
+  margin-top: 1.5rem;
   margin-left: 4px;
   display: flex;
 }
@@ -80,16 +81,22 @@ a {
   color:#e96443;
   display: block;
   padding: 1rem 1.5rem;
-  margin-bottom: -5px;
+  margin-bottom: -1px;
   border: 1px solid transparent;
-  border-bottom-color: #e0e0e0;
-  border-radius: 5px 5px 0 0;
+  /* border-bottom-color: #e0e0e0; */
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
   text-decoration: none;
+  border-color: #e0e0e0;
+  border-bottom-color: #fefefe;
 }
 
 a.selected {
-  border-color: #e0e0e0;
-  border-bottom-color: #fefefe;
+  /* border-color: #e0e0e0;
+  border-bottom-color: #fefefe; */
+  /* padding: 1rem 2rem; */
+  background: #e96443;
+  color: #fefefe;
 }
 a:hover, a.selected:hover  {
   background: #e96443;
