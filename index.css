@@ -27,27 +27,27 @@ html, body {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-#inpainted-music {
+#inpainted-music, #controll-number-of-bars {
   padding: 2rem;
 }
 
 
 /* Custom player style */
-#inpainted-music midi-player {
+midi-player {
   display: block;
   width: inherit;
   margin: 4px;
   margin-top: 0;
 }
 
-#inpainted-music midi-player::part(control-panel) {
+midi-player::part(control-panel) {
   background: linear-gradient(#fefefe, #e9e9e9);
   border: 1px solid #e9e9e9;
   border-top: none;
   border-radius: 0 0 10px 10px;
 }
 
-#inpainted-music midi-visualizer .piano-roll-visualizer {
+midi-visualizer .piano-roll-visualizer {
   background: #fefefe;
   border: 1px solid #e9e9e9;
   border-bottom: none;
@@ -56,17 +56,17 @@ html, body {
   margin-bottom: 0;
   overflow: auto;
 }
-#inpainted-music midi-visualizer svg rect.note {
+midi-visualizer svg rect.note {
   opacity: 0.6;
 }
-#inpainted-music midi-visualizer svg rect.note[data-instrument="0"]{
+midi-visualizer svg rect.note[data-instrument="0"]{
   fill: #e22;
 }
-#inpainted-music midi-visualizer svg rect.note[data-instrument="1"]{
+midi-visualizer svg rect.note[data-instrument="1"]{
   fill: #904e95;
 }
 
-#inpainted-music midi-visualizer svg rect.note.active {
+midi-visualizer svg rect.note.active {
   opacity: 0.9;
   stroke: slategrey;
 }
@@ -75,6 +75,7 @@ html, body {
   margin-left: 4px;
   display: flex;
 }
+
 a {
   color:#e96443;
   display: block;
