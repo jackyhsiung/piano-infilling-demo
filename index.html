@@ -22,21 +22,23 @@
   </header>
   <section id="inpainted-music">
     <h2>Music inpainted by the different models</h2>
-    <div class='anchor-container'>
-      <a href="#" class='model selected'
-        midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi">FELIX</a>
-      <a href="#" class='model'
-        midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_ILM_2track.midi">ILM</a>
-      <a href="#" class='model'
-        midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_Ours_2track.midi">OURS</a>
-    </div>
-    <midi-visualizer id='inpainted-music-visualizer'
-      src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi">
-    </midi-visualizer>
-    <midi-player id='inpainted-music-player'
-      src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi"
-      visualizer="#inpainted-music midi-visualizer">
-    </midi-player>
+    <section id="inpainted-music-song1">
+      <div class='anchor-container'>
+        <a class='model selected'
+          midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_Ours_2track.midi">Ours</a>
+        <a class='model'
+          midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_FELIX_2track.midi">FELIX</a>
+        <a class='model'
+          midi-url="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_ILM_2track.midi">ILM</a>
+      </div>
+      <midi-visualizer id='inpainted-music-visualizer'
+        src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_Ours_2track.midi">
+      </midi-visualizer>
+      <midi-player id='inpainted-music-player'
+        src="https://cdn.jsdelivr.net/gh/jackyhsiung/inpainting-demo-page/assets/songs/inpainted-music/song01/song01_Ours_2track.midi"
+        visualizer="#inpainted-music midi-visualizer">
+      </midi-player>
+    </section>
   </section>
 
   <script

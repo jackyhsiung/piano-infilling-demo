@@ -27,7 +27,7 @@ html, body {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-section {
+#inpainted-music {
   padding: 2rem;
 }
 
@@ -94,4 +94,5 @@ a.selected {
 a:hover, a.selected:hover  {
   background: #e96443;
   color: #ffffff;
+  cursor: pointer;
 }
