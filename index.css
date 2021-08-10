@@ -67,7 +67,7 @@ midi-visualizer svg rect.note[data-instrument="1"]{
 }
 
 midi-visualizer svg rect.note.active {
-  opacity: 0.9;
+  opacity: 1.0;
   stroke: slategrey;
 }
 
