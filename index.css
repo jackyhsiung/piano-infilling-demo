@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   font-family: 'Arimo', sans-serif;
   font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
 }
 
 .page-header {
@@ -14,23 +15,49 @@ html, body {
 
 .page-header__link {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.6rem 0.9rem;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin: 0 0.25rem 1rem 0.25rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.page-header__link:hover {
+  color: #ffffff;
+  background-color: #904e95;
+  border-color: #904e95;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 #inpainted-music, #controll-number-of-bars {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
+#inpainted-music h2, #controll-number-of-bars h2,
+#inpainted-music h3, #controll-number-of-bars h3  {
+  color: #e96443;
+  opacity: 0.9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+#inpainted-music p, #controll-number-of-bars p {
+  font-family: 'Literata', serif;
+  color: #606c71;
+}
+
+#inpainted-music h2, #controll-number-of-bars h2,
+#inpainted-music h3, #controll-number-of-bars h3,
+#inpainted-music p, #controll-number-of-bars p  {
+  margin-left: 4px;
+  margin-right: 4px;
+}
 
 /* Custom player style */
 midi-player {
@@ -77,7 +104,7 @@ midi-visualizer svg rect.note.active {
   display: flex;
 }
 
-a {
+#inpainted-music a, #controll-number-of-bars a {
   color:#e96443;
   display: block;
   padding: 1rem 1.5rem;
@@ -91,14 +118,15 @@ a {
   border-bottom-color: #fefefe;
 }
 
-a.selected {
+#inpainted-music a.selected, #controll-number-of-bars a.selected {
   /* border-color: #e0e0e0;
   border-bottom-color: #fefefe; */
   /* padding: 1rem 2rem; */
   background: #e96443;
   color: #fefefe;
 }
-a:hover, a.selected:hover  {
+#inpainted-music a:hover, #controll-number-of-bars a:hover,
+#inpainted-music a.selected:hover, #controll-number-of-bars a.selected:hover  {
   background: #e96443;
   color: #ffffff;
   cursor: pointer;
