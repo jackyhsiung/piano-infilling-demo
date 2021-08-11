@@ -12,7 +12,9 @@ html, body {
   color: #fff;
   background: linear-gradient(to right, #e96443, #904e95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+.page-header h2 {
+  font-weight: normal;
+}
 .page-header__link {
   text-decoration: none;
   font-size: 1rem;
