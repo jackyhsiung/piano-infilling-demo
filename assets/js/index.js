@@ -1,14 +1,15 @@
-const modelList = document.getElementsByClassName("model")
+$(document).ready(function(){
+  $("#inpainted-music a, #controll-number-of-bars a").click(function() {
+    // switch to the selected model
+    const songNumber = $(this).parent().parent().attr('id')
+    const midiUrl = $(this).attr('midi-url')
+    const midiPlayerId = songNumber + '-' + 'player'
+    const midiVisualizerId = songNumber + '-' + 'visualizer'
+    $('#'+midiPlayerId).attr("src", midiUrl);
+    $('#'+midiVisualizerId).attr("src", midiUrl);
 
-for (let item of modelList) {
-  item.addEventListener("click", function () {
-    const prevSelected = document.getElementsByClassName("model selected")[0]
-    prevSelected.classList.remove('selected');
-    item.classList.add('selected')
-
-    const midiURL = item.getAttribute('midi-url')
-    document.getElementById("inpainted-music-visualizer").src = midiURL
-    document.getElementById("inpainted-music-player").src = midiURL
-  });
-}
-// console.log(anchorList)
+    // set the anchor tag selected
+    $('#'+songNumber+' a.selected').removeAttr('class')
+    $(this).attr('class', 'selected')
+  })
+});
