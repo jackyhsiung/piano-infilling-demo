@@ -37,10 +37,12 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-#inpainted-music, #controll-number-of-bars {
+/* #inpainted-music, #controll-number-of-bars {
   padding: 0 2rem;
+} */
+main {
+  padding: 2rem 1rem;
 }
-
 #inpainted-music h2, #controll-number-of-bars h2,
 #inpainted-music h3, #controll-number-of-bars h3  {
   color: #e96443;
@@ -133,3 +135,23 @@ midi-visualizer svg rect.note.active {
   color: #ffffff;
   cursor: pointer;
 }
+
+.site-footer {
+  margin: 0 4px;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: solid 1px #eff0f1;
+}
+
+.site-footer-credit {
+  padding-left: 4px;
+  font-family: 'Literata', serif;
+  color: #606c71;
+}
+
+.site-footer-credit a {
+  text-decoration: none;
+  color:#e96443;
+  opacity: 0.9;
+}
+
